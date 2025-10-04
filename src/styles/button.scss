@@ -1,0 +1,20 @@
+.btn-bg-gradient{
+    background: linear-gradient(45deg, #06b6d4, #a855f7);
+}
+
+.linkedin-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    border:1px solid #f2edee;
+    svg{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.linkedin-button:hover {
+    background-color: #f2edee;
+
+}

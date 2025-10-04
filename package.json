@@ -1,0 +1,24 @@
+{
+  "name": "scv3",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel ./src/*.html",
+    "build": "parcel build ./src/*.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.0",
+    "parcel": "latest",
+    "posthtml": "^0.16.6",
+    "posthtml-include": "^2.0.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.8",
+    "jquery": "^3.7.1",
+    "owl.carousel": "^2.3.4",
+    "simplelightbox": "^2.14.3"
+  }
+}

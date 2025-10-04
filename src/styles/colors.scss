@@ -1,0 +1,25 @@
+.text-maroon{
+    color: var(--maroon);
+}
+.bg-maroon{
+    background-color: var(--maroon);
+}
+.btn.bg-maroon:hover{
+    background-color: var(--maroon) !important;
+
+}
+
+.text-navy{
+    color: var(--navy);
+}
+.bg-navy{
+    background-color: var(--navy);
+}
+
+
+.text-slate{
+    color: var(--slate);
+}
+.bg-slate{
+    background-color: var(--slate);
+}

@@ -1,0 +1,49 @@
+.home--hero {
+
+    video {
+
+        width: 100%;
+        height: auto;
+    }
+
+    @include media-breakpoint-down(md) {
+        video {
+            display: none;
+        }
+    }
+
+
+
+    .content {
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: relative;
+        background-color: var(--navy);
+
+        .inner {
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .cta-row{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap:2em;
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+        }
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+                position: absolute;
+                background-color: transparent;
+
+        }
+    }
+}

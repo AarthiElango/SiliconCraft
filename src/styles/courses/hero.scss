@@ -1,0 +1,12 @@
+.courses--hero{
+    color: #fff;
+    background: linear-gradient(-45deg, var(--navy), var(--maroon), var(--navy));
+    text-align: left;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+    padding: 64px 0;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}

@@ -1,0 +1,12 @@
+.placement--recruiters{
+
+    .recruiter{
+
+        width: 200px;
+        position:relative;
+
+          @include media-breakpoint-down(md) {
+            width: 100%;
+          }
+    }
+}

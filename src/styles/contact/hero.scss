@@ -1,0 +1,49 @@
+ .contact--hero {
+     background: linear-gradient(-45deg, var(--navy), var(--maroon), var(--navy));
+     justify-content: center;
+     align-items: center;
+     min-height: 350px;
+     display: flex;
+     position: relative;
+     overflow: hidden;
+
+     .hero-bg {
+         opacity: .2;
+         background-image: url(https://images.unsplash.com/photo-1744368191937-8fe5fde474a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVjdHJvbmljcyUyMGVuZ2luZWVyaW5nJTIwVkxTSSUyMGNoaXAlMjBkZXNpZ258ZW58MXx8fHwxNzU4NjI5MTM1fDA&ixlib=rb-4.1.0&q=80&w=1080);
+         background-position: 50%;
+         background-size: cover;
+         height: 350px;
+         position: absolute;
+         inset: 0;
+
+     }
+
+
+     .floating-particles {
+         pointer-events: none;
+         position: absolute;
+         inset: 0
+     }
+
+     .particle {
+         opacity: .3;
+         background: #fff;
+         border-radius: 50%;
+         width: 8px;
+         height: 8px;
+         animation: 4s ease-in-out infinite float;
+         position: absolute;
+         left: 99.2234%;
+         top: 84.4406%;
+         animation-delay: 0.152096s;
+         animation-duration: 2.97445s;
+     }
+
+         .animated-text {
+                -webkit-text-fill-color: transparent;
+                background: linear-gradient(45deg,#06b6d4,#a855f7) text;
+                animation: 2s ease-in-out infinite pulse
+            }
+
+
+ }

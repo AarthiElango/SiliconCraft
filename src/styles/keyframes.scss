@@ -1,0 +1,25 @@
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+
+    /* adjust based on content width */
+}
+
+
+   @keyframes float {
+                0%,to {
+                    opacity: 0;
+                    transform: translateY(0)translate(0)
+                }
+
+                50% {
+                    opacity: 1;
+                    transform: translateY(-100px)translate(50px)
+                }
+            }

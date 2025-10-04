@@ -1,0 +1,42 @@
+.home--news-ticker {
+
+    color: #fff;
+    background: linear-gradient(135deg, #7c2d12 0%, #991b1b 50%, #1e3a8a 100%) 0 0 / 200% 200%;
+    border-bottom: 2px solid #fff3;
+    padding: 16px 0;
+    animation: 15s infinite subtleGradient;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #00000026;
+
+    button{
+        border-radius: 5px;
+        padding-top:8px;
+        padding-bottom:8px;
+    }
+    button.btn-updates{
+        background-color:white;
+        color: var(--maroon);
+
+    }
+
+    button.ticker-button {
+        white-space: nowrap;
+        width: max-content;
+        background-color: #931e19;
+        color:white;
+         padding-left:8px;
+        padding-right:8px;
+        border:1px solid white;
+
+    }
+       .ticker-wrapper {
+        overflow: hidden;
+        width: 100%;
+        .ticker-content {
+            display: flex;
+            gap: 2rem;
+            animation: scroll 20s linear infinite;
+        }
+    }
+}

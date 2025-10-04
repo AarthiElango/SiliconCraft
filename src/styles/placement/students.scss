@@ -1,0 +1,18 @@
+.placement--students{
+
+    .student{
+        position:relative;
+
+        .company{
+            position:absolute;
+            bottom:100px;
+            right:10px;
+            background:#fff;
+            padding:5px;
+            img{
+
+                width: 120px;
+            }
+        }
+    }
+}

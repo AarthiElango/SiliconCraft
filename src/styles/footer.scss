@@ -1,0 +1,27 @@
+footer{
+    background:rgb(17, 24, 39);
+
+    img.logo-2{
+        width:48px;
+    }
+
+    .social-icons svg{
+        stroke:white;
+    }
+
+    .list-group .list-group-item{
+        background-color: transparent;
+        color:white;
+        border:none;
+        padding-left:0;
+    }
+
+    table.contact td{
+        background-color: transparent !important;
+        border:none !important;
+
+        svg{
+            stroke: white;
+        }
+    }
+}

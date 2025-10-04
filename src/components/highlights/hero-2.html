@@ -1,0 +1,40 @@
+<div class="highlights--hero-2 py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h4 class="text-center">MoU Achievement Dashboard</h4>
+        <p class="text-center">Explore our partnerships, seminars, and awards</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12">
+      <ul class="nav nav-pills nav-fill" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="mous-tab" data-bs-toggle="tab" data-bs-target="#mous-tab-pane" type="button" role="tab" aria-controls="mous-tab-pane" aria-selected="true">MoUs</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="events-tab" data-bs-toggle="tab" data-bs-target="#events-tab-pane" type="button" role="tab" aria-controls="events-tab-pane" aria-selected="false">Events</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="awards-tab" data-bs-toggle="tab" data-bs-target="#awards-tab-pane" type="button" role="tab" aria-controls="awards-tab-pane" aria-selected="false">Awards</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active py-3" id="mous-tab-pane" role="tabpanel" aria-labelledby="mous-tab" tabindex="0">
+    <include src="./src/components/highlights/tabs/mous.html"></include>
+  </div>
+  <div class="tab-pane fade  py-3" id="events-tab-pane" role="tabpanel" aria-labelledby="events-tab" tabindex="0">
+    <include src="./src/components/highlights/tabs/events.html"></include>
+
+  </div>
+  <div class="tab-pane fade  py-3" id="awards-tab-pane" role="tabpanel" aria-labelledby="awards-tab" tabindex="0">
+    <include src="./src/components/highlights/tabs/awards.html"></include>
+
+  </div>
+ </div>
+    </div>
+  </div>
+</div>

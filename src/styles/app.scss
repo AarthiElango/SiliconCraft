@@ -1,0 +1,32 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+@import "~/node_modules/animate.css/animate.css";
+
+@import './root';
+@import './typography';
+@import './nav';
+@import './helpers';
+@import './footer';
+@import './keyframes';
+@import './colors';
+@import './quick-contact';
+@import './button';
+@import './svg';
+
+@import "./home/index";
+@import "./courses/index";
+@import "./internship/index";
+@import "./about/index";
+@import "./placement/index";
+@import "./admissions/index";
+@import "./highlights/index";
+@import "./contact/index";
+
+.hr-gray{
+    border: white;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+}
