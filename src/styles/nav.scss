@@ -53,7 +53,20 @@ nav.primary {
       position: absolute;
       bottom: -2px;
       left: 0;
+
+       @include media-breakpoint-down(md) {
+      width: 30%;
+
+       }
     }
 
   }
+}
+
+nav.primary a.apply-now{
+  background: var(--maroon);
+    color: white !important;
+    border-radius: 20px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
 }

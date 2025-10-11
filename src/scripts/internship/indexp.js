@@ -29,6 +29,5 @@ import SimpleLightbox from "simplelightbox";
   }
   let gallery = new SimpleLightbox('.internship--indexp .owl-carousel .owl-item:not(.cloned) a', options);
 
-  console.log(gallery)
  
 })();

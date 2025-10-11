@@ -15,10 +15,13 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.8",
     "jquery": "^3.7.1",
     "owl.carousel": "^2.3.4",
+    "particles.js": "^2.0.0",
     "simplelightbox": "^2.14.3"
   }
 }

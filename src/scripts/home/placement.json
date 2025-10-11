@@ -1,0 +1,184 @@
+[
+    {
+        "student": {
+            "name":"Kaviya VijayaKannan.C",
+            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-5.png"
+        },
+        "company":{
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/ahesa.png"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/6.png"
+        }
+    },
+	
+	{
+        "student": {
+            "name":"Miruthala.E",
+            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-6.png"
+        },
+        "company":{
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/hcl-logo-white.jpg"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/5-1.png"
+        }
+    },
+	
+	{
+        "student": {
+            "name":"Macklin Eniya.c",
+            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-7.png"
+        },
+        "company":{
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/hcl-logo-white.jpg"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2025/02/poster2.png"
+        }
+    },
+	
+	{
+        "student": {
+            "name":"Kiran.k",
+            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-8.png"
+        },
+        "company":{
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/hcl-logo-white.jpg"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/8.png"
+        }
+    },
+	
+	
+	{
+        "student": {
+            "name":"Karthikeyan.k",
+            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-9.png"
+        },
+        "company":{
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/hcl-logo-white.jpg"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/9.png"
+        }
+    },
+	
+	{
+        "student": {
+            "name":"Surendhar.G",
+            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-10.png"
+        },
+        "company":{
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/hcl-logo-white.jpg"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/10.png"
+        }
+    },
+	
+	{
+        "student": {
+            "name":"Vignesh.D",
+            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-4-1.png"
+        },
+        "company":{
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/edit-png-1.png"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/6-1.png"
+        }
+    },
+	{
+        "student": {
+            "name":"Sutharsan.c",
+            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-1.jpg"
+        },
+        "company":{
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/test2.jpg"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/sili-7.jpeg"
+        }
+    },
+	
+	
+	
+	{
+        "student": {
+            "name":"Jagan.A",
+            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-2-1.png"
+        },
+        "company":{
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/object-automatation.jpg"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/4.png"
+        }
+    },
+	{
+        "student": {
+            "name":"Nithish Kannan.J",
+            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-3-1.png"
+        },
+        "company":{
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/mobiveli1.jpg"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/2-3.png"
+        }
+    },
+      {
+        "student": {
+            "name":"Abinash.D",
+            "image":"https://silicon-craft.com/wp-content/uploads/2025/04/Abinash.png"
+        },
+        "company":{
+            "image": "https://silicon-craft.com/wp-content/uploads/2025/04/ymtsnew-logo.webp"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2025/04/6.png"
+        }
+    },
+	
+	{
+        "student": {
+            "name":"Manobala S",
+            "image":"https://silicon-craft.com/wp-content/uploads/2025/04/manobala.png"
+        },
+        "company":{
+            "image": "https://silicon-craft.com/wp-content/uploads/2025/04/edevon-logo.png"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2025/04/13.png"
+        }
+    },
+    
+    	{
+        "student": {
+            "name":"Mowneash R S",
+            "image":"https://silicon-craft.com/wp-content/uploads/2025/04/mowneash.png"
+        },
+        "company":{
+             "image": "https://silicon-craft.com/wp-content/uploads/2024/12/ahesa.png"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2025/04/16.pngg"
+        }
+    },
+    	{
+        "student": {
+            "name":"Mohamed Sharith",
+            "image":"https://silicon-craft.com/wp-content/uploads/2025/04/mohammed-sharith.png"
+        },
+        "company":{
+             "image": "https://silicon-craft.com/wp-content/uploads/2025/04/maxlinear-logo.png"
+        },
+        "popup": {
+            "image": "https://silicon-craft.com/wp-content/uploads/2025/04/19.png"
+        }
+    }
+	
+	
+]

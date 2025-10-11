@@ -1,0 +1,34 @@
+.placement-splide .card{
+    background: #1d1c42;
+    color:white;
+    width: 230px;
+    cursor:pointer;
+
+}
+.placement-splide .card:hover{
+    background: #007bb5;
+}
+.placement-splide img.student-image{
+    width: 128px;
+}
+.placement-splide .company-logo{
+
+	width: 140px;
+	height:45px;
+}
+
+/* .modal-body{
+	 padding: 4px; 
+} */
+ 
+  @media screen and (max-width: 425px) {
+  .modal-dialog {
+    margin: 0 auto; 
+  }
+
+}  
+ 
+
+
+
+
