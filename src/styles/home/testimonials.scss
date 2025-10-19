@@ -1,5 +1,6 @@
 .home--testimonials {
     background-color: #f9fafb;
+    
     button.ticker-button {
         white-space: nowrap;
         width: max-content;
@@ -13,21 +14,146 @@
             display: flex;
             gap: 2rem;
             animation: scroll 20s linear infinite;
-
-            .card{
-
-                width:350px;
-
+            
+            &:hover {
+                animation-play-state: paused;
+            }
+            
+            .card {
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                min-height: 400px; // Set minimum height for consistency
                 
-.star{
-    color:#fbbf24;
-    width:30px;
-}
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    padding: 1.5rem;
+                    
+                    p {
+                        flex: 1; // Makes paragraph take available space
+                        margin-bottom: 1rem;
+                    }
+                    
+                    .card-footer {
+                        margin-top: auto; // Pushes footer to bottom
+                        padding: 1rem 0 0 0;
+                        border-top: 1px solid #e5e7eb;
+                    }
+                }
+                
+                .star {
+                    color: #fbbf24;
+                    width: 30px;
+                }
             }
 
             img {
                 width: 40px;
                 height: 40px;
+            }
+        }
+    }
+}
+
+// Animation keyframes
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+// Make all cards equal height using JavaScript alternative or pure CSS
+.home--testimonials .testimonials-content .card {
+    // Ensure all cards have the same height
+    .card-body {
+        min-height: 350px; // Adjust based on your longest content
+    }
+}
+
+// Responsive styles
+@media screen and (max-width: 992px) {
+    .home--testimonials {
+        .testimonials-content {
+            .card {
+                width: 320px;
+                min-height: 380px;
+                
+                .card-body {
+                    min-height: 320px;
+                    padding: 1.25rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home--testimonials {
+        .testimonials-content {
+            .card {
+                width: 300px;
+                min-height: 400px;
+                
+                .card-body {
+                    min-height: 340px;
+                    padding: 1rem;
+                    
+                    p {
+                        font-size: 0.95rem;
+                    }
+                }
+                
+                .card-footer {
+                    .d-flex {
+                        flex-direction: column !important;
+                        gap: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home--testimonials {
+        padding: 2rem 0 !important;
+        
+        h2 {
+            font-size: 1.5rem;
+        }
+        
+        .testimonials-content {
+            gap: 1.5rem;
+            animation: scroll 30s linear infinite; // Slower on mobile
+            
+            .card {
+                width: 280px;
+                min-height: 420px;
+                
+                .card-body {
+                    min-height: 360px;
+                    padding: 1rem;
+                    
+                    p {
+                        font-size: 0.9rem;
+                        line-height: 1.5;
+                    }
+                }
+                
+                .star {
+                    width: 24px;
+                }
+            }
+            
+            img {
+                width: 36px;
+                height: 36px;
             }
         }
     }

@@ -16,3 +16,20 @@
         }
     }
 }
+
+.placement-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .placement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+  }
+  .linkedin-icon {
+    color: #0A66C2;
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    display: inline-block;
+  }
+  .linkedin-icon:hover {
+    color: #004182;
+  }

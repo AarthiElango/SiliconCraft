@@ -1,0 +1,41 @@
+.industry-exposure-splide .card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    min-width: 230px;
+    max-width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.industry-exposure-splide .splide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.industry-exposure-splide .card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.industry-exposure-splide img.industry-exposure-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 425px) {
+  .modal-dialog {
+    margin: 0 auto; 
+  }
+  
+  .industry-exposure-splide .card {
+    min-width: 200px;
+  }
+  
+  .industry-exposure-splide img.industry-exposure-image {
+    height: 150px;
+  }
+}

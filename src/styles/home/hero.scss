@@ -1,69 +1,225 @@
 .home--hero {
+  position: relative;
+  width: 100%;
+  height: 350px; // Base height for large laptop/desktop
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    // video {
+// Layer 1: Video background
+.hero-video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
 
-    //     width: 100%;
-    //     height: auto;
-    // }
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    opacity: 1;
+  }
+}
 
-    // @include media-breakpoint-down(md) {
-    //     video {
-    //         display: none;
-    //     }
-    // }
+// Semi-transparent overlay
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
 
-    #particles-js {
-        height: 300px;
-        width: 100%;
-        background-color: navy;
-        position:relative;
+// Layer 2: Particles JS
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  pointer-events: none;
+  
+  canvas {
+    opacity: 0.7;
+  }
+}
 
-        .hero-text {
-            position:absolute;
-            top:0;
-            left:0;
-            z-index:1;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-            height: 300px;
-            width: 100%;
-        }
+// Layer 3: Hero text content - Bootstrap layout
+.hero-text {
+  position: relative;
+  z-index: 4;
+  width: 100%;
+
+  h1 {
+    font-size: 2.25rem; // Smaller for 350px height
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    animation: fadeInUp 0.8s ease-out;
+    line-height: 1.2;
+  }
+
+  p.sub {
+    font-size: 1rem; // Smaller for 350px height
+    line-height: 1.5;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+  }
+
+  .d-flex {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+  }
+
+  .btn {
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    padding: 0.625rem 1.75rem; // Slightly smaller padding
+    font-size: 0.95rem;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
+  }
+}
 
+// Animation keyframes
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    // .content {
-    //     z-index: 100;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     position: relative;
-    //     background-color: var(--navy);
+// Responsive - Using Bootstrap breakpoints
+@include media-breakpoint-down(xl) {
+  .home--hero {
+    height: 350px; // Keep same on XL
+  }
+}
 
-    //     .inner {
-    //         height: 400px;
-    //         display: flex;
-    //         justify-content: center;
-    //         align-items: center;
+@include media-breakpoint-down(lg) {
+  .home--hero {
+    height: 320px; // Slightly smaller on large tablets
+  }
+  
+  .hero-text {
+    h1 {
+      font-size: 2rem;
+    }
+    
+    p.sub {
+      font-size: 0.95rem;
+    }
+  }
+}
 
-    //         .cta-row {
-    //             display: flex;
-    //             justify-content: center;
-    //             align-items: center;
-    //             flex-direction: column;
-    //             gap: 2em;
+@include media-breakpoint-down(md) {
+  .home--hero {
+    height: 300px; // Smaller on tablets
+  }
+  
+  .hero-text {
+    h1 {
+      font-size: 1.75rem;
+    }
+    
+    p.sub {
+      font-size: 0.9rem;
+    }
+    
+    .btn {
+      padding: 0.5rem 1.25rem;
+      font-size: 0.875rem;
+    }
+  }
+  
+  .video-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
 
-    //             @include media-breakpoint-up(md) {
-    //                 flex-direction: row;
-    //             }
-    //         }
-    //     }
+@include media-breakpoint-down(sm) {
+  .home--hero {
+    height: 300px; // Taller for stacked buttons on mobile
+  }
+  
+  .hero-text {
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    p.sub {
+      font-size: 0.85rem;
+    }
+    
+    .btn {
+      padding: 0.625rem 1.25rem;
+      font-size: 0.875rem;
+    }
+  }
+  
+  .video-overlay {
+    background: rgba(0, 0, 0, 0.6);
+  }
+}
 
-    //     @include media-breakpoint-up(md) {
-    //         position: absolute;
-    //         background-color: transparent;
+// Extra small devices
+@media screen and (max-width: 400px) {
+  .home--hero {
+    height: 350px; // More height for very small screens
+  }
+  
+  .hero-text {
+    h1 {
+      font-size: 1.35rem;
+    }
+    
+    p.sub {
+      font-size: 0.8rem;
+    }
+  }
+}
 
-    //     }
-    // }
+// Landscape orientation
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .home--hero {
+    height: 300px; // Shorter in landscape
+  }
+  
+  .hero-text {
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem !important;
+    }
+    
+    p.sub {
+      font-size: 0.85rem;
+      margin-bottom: 0.75rem !important;
+    }
+    
+    .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+    }
+  }
 }

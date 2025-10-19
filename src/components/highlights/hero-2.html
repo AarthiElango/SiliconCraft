@@ -1,40 +1,67 @@
-<div class="highlights--hero-2 py-5">
+<div class="highlights--hero-2 py-5 bg-light">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h4 class="text-center">MoU Achievement Dashboard</h4>
-        <p class="text-center">Explore our partnerships, seminars, and awards</p>
+        <h2 class="text-center fw-bold mb-3">MoU Achievement Dashboard</h2>
+        <p class="text-center text-muted">Explore our partnerships, seminars, and awards</p>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Tabs Section -->
 <div class="container py-5">
   <div class="row">
     <div class="col-12">
-      <ul class="nav nav-pills nav-fill" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="mous-tab" data-bs-toggle="tab" data-bs-target="#mous-tab-pane" type="button" role="tab" aria-controls="mous-tab-pane" aria-selected="true">MoUs</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="events-tab" data-bs-toggle="tab" data-bs-target="#events-tab-pane" type="button" role="tab" aria-controls="events-tab-pane" aria-selected="false">Events</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="awards-tab" data-bs-toggle="tab" data-bs-target="#awards-tab-pane" type="button" role="tab" aria-controls="awards-tab-pane" aria-selected="false">Awards</button>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active py-3" id="mous-tab-pane" role="tabpanel" aria-labelledby="mous-tab" tabindex="0">
-    <include src="./src/components/highlights/tabs/mous.html"></include>
-  </div>
-  <div class="tab-pane fade  py-3" id="events-tab-pane" role="tabpanel" aria-labelledby="events-tab" tabindex="0">
-    <include src="./src/components/highlights/tabs/events.html"></include>
+      <!-- Navigation Pills -->
+      <ul class="nav nav-pills nav-fill mb-4" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="mous-tab" data-bs-toggle="tab" data-bs-target="#mous-tab-pane" type="button" role="tab" aria-controls="mous-tab-pane" aria-selected="true">
+            MOUs Signed
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="events-tab" data-bs-toggle="tab" data-bs-target="#events-tab-pane" type="button" role="tab" aria-controls="events-tab-pane" aria-selected="false">
+            Events Conducted
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="awards-tab" data-bs-toggle="tab" data-bs-target="#awards-tab-pane" type="button" role="tab" aria-controls="awards-tab-pane" aria-selected="false">
+            Internal Events
+          </button>
+        </li>
+      </ul>
 
-  </div>
-  <div class="tab-pane fade  py-3" id="awards-tab-pane" role="tabpanel" aria-labelledby="awards-tab" tabindex="0">
-    <include src="./src/components/highlights/tabs/awards.html"></include>
+      <!-- Tab Content -->
+      <div class="tab-content" id="myTabContent">
+        <!-- MOUs Tab -->
+        <div class="tab-pane fade show active py-3" id="mous-tab-pane" role="tabpanel" aria-labelledby="mous-tab" tabindex="0">
+          <div id="mous-content"></div>
+        </div>
 
-  </div>
- </div>
+        <!-- Events Tab -->
+        <div class="tab-pane fade py-3" id="events-tab-pane" role="tabpanel" aria-labelledby="events-tab" tabindex="0">
+          <div id="events-content"></div>
+        </div>
+
+        <!-- Awards Tab -->
+        <div class="tab-pane fade py-3" id="awards-tab-pane" role="tabpanel" aria-labelledby="awards-tab" tabindex="0">
+          <div id="awards-content"></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<!-- Image Lightbox Modal -->
+<div class="modal fade" id="imageLightboxModal" tabindex="-1" aria-labelledby="imageLightboxModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-body p-0 position-relative">
+        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close" style="z-index: 1060;"></button>
+        <img id="lightboxImage" src="~/src/images/home/banner2.jpg" class="w-100 rounded" alt="Lightbox Image">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <script type="module" src="./src/scripts/highlights/initHighlights.js"></script> -->

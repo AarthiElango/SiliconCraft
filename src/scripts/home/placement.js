@@ -14,7 +14,7 @@ jQuery(function () {
               <img src="{student.image}" class="rounded-circle student-image" alt="Avatar" />
             </div>
             <p class="student-name">{student.name}</p>
-            <div class="d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center bg-white">
               <img src="{company.logo}" class="company-logo" alt="" />
             </div>
           </div>
@@ -46,16 +46,21 @@ function initSplide(){
   type: "loop",
   drag: "free",
   focus: "center",
-  perPage: 5, // default for large screens
-  arrows: false,        // 🚫 removes arrows
-  pagination: false,    // 🚫 removes dots
+  perPage: 6,
+  gap: '1rem', // ✅ Add gap between slides
+  arrows: false,
+  pagination: false,
   autoScroll: {
     speed: 1,
   },
   breakpoints: {
-    1024: { perPage: 2 },
-    640: { perPage: 1 },
+    1400: { perPage: 5 },
+    1200: { perPage: 4 },
+    992: { perPage: 3 },
+    768: { perPage: 2 },
+    576: { perPage: 1 },
   },
+  padding: { left: '2rem', right: '2rem' }, // ✅ Add padding
 });
   splide.mount({AutoScroll})
   setTimeout(()=>{

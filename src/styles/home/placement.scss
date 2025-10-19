@@ -1,34 +1,40 @@
 .placement-splide .card{
     background: #1d1c42;
-    color:white;
-    width: 230px;
-    cursor:pointer;
-
+    color: white;
+    /* width: 230px;  ❌ Remove this */
+    cursor: pointer;
+    min-width: 230px; /* ✅ Use min-width instead */
+    max-width: 100%; /* ✅ Allow flexibility */
 }
+
+.placement-splide .splide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .placement-splide .card:hover{
     background: #007bb5;
 }
+
 .placement-splide img.student-image{
     width: 128px;
+    height: 128px;
+    object-fit: cover;
 }
+
 .placement-splide .company-logo{
-
-	width: 140px;
-	height:45px;
+    width: 140px;
+    height: 45px;
+    object-fit: contain;
 }
 
-/* .modal-body{
-	 padding: 4px; 
-} */
- 
-  @media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) {
   .modal-dialog {
     margin: 0 auto; 
   }
-
-}  
- 
-
-
-
-
+  
+  .placement-splide .card {
+    min-width: 200px;
+  }
+}

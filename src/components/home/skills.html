@@ -1,80 +1,111 @@
 <div class="container py-5 home--skills">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="text-center">
-                Master the Skills the Semiconductor Industry Demands
-            </h2>
-            <p class="text-center">
-                Our curriculum maps to in-demand roles. With 20% theory and 80% labs,
-                you're ready for real responsibilities from day one.
-            </p>
-        </div>
+  <div class="row">
+    <div class="col-12">
+      <h2 class="text-center">
+        Master the Skills the Semiconductor Industry Demands
+      </h2>
+      <p class="text-center">
+        Our curriculum maps to in-demand roles. With 20% theory and 80% labs,
+        you're ready for real responsibilities from day one.
+      </p>
     </div>
-    <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="card">
-                <img src="~src/images/home/skills01.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title text-center">
-                        Advanced ASIC Design &amp; Verification
-                    </h5>
-                    <p class="card-text text-center">
-                        SystemVerilog, UVM, SVA, coverage &amp; regressions.
-                    </p>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <!-- <a href="" class="text-maroon">View Curriculum</a> -->
-                    <a href="javascript:void(0)" data-onclick-navigate="/courses.html?modal=advanced-asic-design-verification">View Curriculum</a>
-                    </div>
-                </div>
+  </div>
+
+  <div class="row g-4">
+    <!-- CARD 1 -->
+    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+      <div class="card flex-fill h-100">
+        <img src="~src/images/home/skills01.jpg" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title">Advanced ASIC Design &amp; Verification</h5>
+          <p class="card-text flex-grow-1">
+            SystemVerilog, UVM, SVA, coverage &amp; regressions.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mb-3 px-3 text-muted text-sm">
+            <div>
+              <include src="./src/svgs/time.svg"></include> 8 Months
             </div>
-        </div>
-         <div class="col-12 col-md-6">
-            <div class="card">
-                <img src="~src/images/home/skills02.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title text-center">
-                        Physical Design
-                    </h5>
-                    <p class="card-text text-center">
-                        Floorplanning to sign-off. STA, CTS, PnR & ECOs.
-                    </p>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <a href="" class="text-maroon">View Curriculum</a>
-                    </div>
-                </div>
+            <div class="fill-muted">
+              <include src="./src/svgs/location-2.svg"></include> Chennai
             </div>
+          </div>
+          <a href="javascript:void(0)" data-onclick-navigate="/courses.html?modal=advanced-asic-design-verification" class="text-maroon">
+            View Curriculum
+          </a>
         </div>
-         <div class="col-12 col-md-6">
-            <div class="card">
-                <img src="~src/images/home/skills03.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title text-center">
-                        FPGA-Based System Design
-                    </h5>
-                    <p class="card-text text-center">
-                       AXI/DMA pipelines, real-time processing on boards.
-                    </p>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <a href="" class="text-maroon">View Curriculum</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <div class="col-12 col-md-6">
-            <div class="card">
-                <img src="~src/images/home/skills04.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                    <h5 class="card-title text-center">
-                        Advanced Embedded Systems
-                    </h5>
-                    <p class="card-text text-center">
-                        Drivers, RTOS, Linux, connectivity & diagnostics.
-                    </p>
-                    <div class="d-flex justify-content-center align-items-center">
-                        <a href="" class="text-maroon">View Curriculum</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+
+    <!-- CARD 2 -->
+    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+      <div class="card flex-fill h-100">
+        <img src="~src/images/home/skills02.jpg" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title">Physical Design</h5>
+          <p class="card-text flex-grow-1">
+            Floorplanning to sign-off. STA, CTS, PnR & ECOs.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mb-3 px-3 text-muted text-sm">
+            <div>
+              <include src="./src/svgs/time.svg"></include> 8 Months
+            </div>
+            <div class="fill-muted">
+              <include src="./src/svgs/location-2.svg"></include> Chennai
+            </div>
+          </div>
+          <a href="javascript:void(0)" data-onclick-navigate="/courses.html?modal=physical-design" class="text-maroon">
+            View Curriculum
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+      <div class="card flex-fill h-100">
+        <img src="~src/images/home/skills03.jpg" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title">FPGA-Based System Design</h5>
+          <p class="card-text flex-grow-1">
+            AXI/DMA pipelines, real-time processing on boards.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mb-3 px-3 text-muted text-sm">
+            <div>
+              <include src="./src/svgs/time.svg"></include> 8 Months
+            </div>
+            <div class="fill-muted">
+              <include src="./src/svgs/location-2.svg"></include> Chennai
+            </div>
+          </div>
+          <a href="javascript:void(0)" data-onclick-navigate="/courses.html?modal=fpga-based-system-design" class="text-maroon">
+            View Curriculum
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="col-12 col-sm-6 col-lg-3 d-flex">
+      <div class="card flex-fill h-100">
+        <img src="~src/images/home/skills04.jpg" class="card-img-top" alt="..." />
+        <div class="card-body d-flex flex-column text-center">
+          <h5 class="card-title">Advanced Embedded Systems</h5>
+          <p class="card-text flex-grow-1">
+            Drivers, RTOS, Linux, connectivity & diagnostics.
+          </p>
+          <div class="d-flex justify-content-between align-items-center mb-3 px-3 text-muted text-sm">
+            <div>
+              <include src="./src/svgs/time.svg"></include> 7 Months
+            </div>
+            <div class="fill-muted">
+              <include src="./src/svgs/location-2.svg"></include> Chennai
+            </div>
+          </div>
+          <a href="javascript:void(0)" data-onclick-navigate="/courses.html?modal=advanced-embedded-systems" class="text-maroon">
+            View Curriculum
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

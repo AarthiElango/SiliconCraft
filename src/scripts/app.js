@@ -2,6 +2,9 @@ import "./home/index";
 import "./internship/index";
 import "./courses/index";
 import "./common/index";
+import "./highlights/index";
+
+// import "./placement/index";
 import * as bootstrap from "bootstrap";
 
 

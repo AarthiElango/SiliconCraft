@@ -1,34 +1,46 @@
 <div class="home--hero">
-  <div id="particles-js">
-    
-          <div class="hero-text">
-            <div class="container">
+  
+  <!-- Video Background Layer -->
+  <div class="hero-video-background">
+    <video autoplay muted loop playsinline preload="auto">
+      <source src="~src/assets/videos/0_Technology_Circuit_Board_3840x2160.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Dark overlay for text readability -->
+    <div class="video-overlay"></div>
+  </div>
+
+  <!-- Particles JS Layer (OPTIONAL - you can keep or remove this entire div) -->
+  <div id="particles-js"></div>
+
+  <!-- Hero Content Layer -->
+  <div class="hero-text">
+    <div class="container">
       <div class="row">
         <div class="col-12">
-            <h1 class="text-white">
-              From Graduate to VLSI &amp; Embedded Industry Leader
-            </h1>
-            <p class="sub text-white">
-              Hands-on VLSI &amp; Embedded training with expert mentors, real
-              projects, and dedicated placement support — we’re with you until
-              you get hired.
-            </p>
-            <div class="cta-row">
-              <a class="btn bg-white" href="~src/courses.html">View Courses</a>
-
-              <a class="btn bg-white" href="~src/contact.html#call"
-                style="box-shadow: none; transform: translateY(0px)">Book a Free Career Call</a>
-            </div>
+          <h1 class="text-white">
+            From Graduate to VLSI &amp; Embedded Industry Leader
+          </h1>
+          <p class="sub text-white">
+            Hands-on VLSI &amp; Embedded training with expert mentors, real
+            projects, and dedicated placement support — we're with you until
+            you get hired.
+          </p>
+          <div class="cta-row">
+            <a class="btn bg-white" href="~src/courses.html">View Courses</a>
+            <a class="btn bg-white" href="~src/placement.html#students">Explore our placements</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="~/node_modules/particles.js/particles.js"></script>
-  <script>
-    particlesJS.load("particles-js", "assets/particles.json", function () {
-      console.log("callback - particles.js config loaded");
-    });
-  </script>
 </div>
+
+<!-- STEP 2: Keep your particles.js scripts at the bottom (if you want particles) -->
+<!-- <script src="/node_modules/particles.js/particles.js"></script>
+<script>
+  particlesJS.load("particles-js", "assets/particles.json", function () {
+    console.log("callback - particles.js config loaded");
+  });
+</script> -->

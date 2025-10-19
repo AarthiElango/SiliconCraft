@@ -10,3 +10,23 @@
           }
     }
 }
+
+.recruiter-card {
+      transition: transform 0.2s;
+    }
+    .recruiter-card:hover {
+      transform: translateY(-5px);
+    }
+    .recruiter-card img {
+      object-fit: contain;
+      height: 80px;
+    }
+    .company-link {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.2s;
+    }
+    .company-link:hover {
+      color: #0d6efd;
+      text-decoration: underline;
+    }

@@ -1,23 +1,33 @@
 import * as bootstrap from "bootstrap";
 
 jQuery(function () {
-  const courseDatabase = {
-    "asic-dv": {
-      name: "Advanced ASIC Design & Verification",
-      brochure: "src/assets/brochure/SiliconCraftVLSI-Brochure.pdf",
-    },
-    pd: { name: "Physical Design", brochure: "brochures/pd.pdf" },
-    fpga: {
-      name: "FPGA-Based System Design",
-      brochure: "/assets/brochure/SiliconCraftVLSI-Brochure.pdf",
-    },
-    embedded: {
-      name: "Advanced Embedded Systems",
-      brochure: "brochures/embedded.pdf",
-    },
-    analog: { name: "Analog Circuit Design", brochure: "brochures/analog.pdf" },
-    layout: { name: "Analog Layout Design", brochure: "brochures/layout.pdf" },
-  };
+ const courseDatabase = {
+  "asic-dv": {
+    name: "Advanced ASIC Design & Verification",
+    brochure: "src/brochure/asic-dv.pdf", // updated relative to index.html
+  },
+  pd: { 
+    name: "Physical Design", 
+    brochure: "src/brochure/pd.pdf" 
+  },
+  fpga: {
+    name: "FPGA-Based System Design",
+    brochure: "src/brochure/fpga.pdf"
+  },
+  embedded: {
+    name: "Advanced Embedded Systems",
+    brochure: "src/brochure/embedded.pdf"
+  },
+  analog: { 
+    name: "Analog Circuit Design", 
+    brochure: "src/brochure/analog.pdf" 
+  },
+  layout: { 
+    name: "Analog Layout Design", 
+    brochure: "src/brochure/layout.pdf" 
+  },
+};
+
 
   const contactModal$ = jQuery(".contact");
   const contactModalInstance = new bootstrap.Modal(contactModal$[0]);
@@ -26,7 +36,8 @@ jQuery(function () {
   const email$ = form$.find("#email");
   const mobile$ = form$.find("#mobile");
   const googleScriptURL =
-  "https://script.google.com/macros/s/AKfycbz8VGpsPrAv2PI6VAMz9eO7zYzwBKFfVDyvovGF4CbP6WAEna_9BUYe_hsZ5X7IKfW-/exec"; // replace with Apps Script deployment URL
+  "https://script.google.com/macros/s/AKfycbwL8VQhy_loO4KF8UrxUZokPeek3qCKtQf_j0efuz491Tp9jSHEDxFj-WJ7egnwVu4bgA/exec"; 
+  // replace with Apps Script deployment URL
 
 
   fullname$.on("keyup", function () {
@@ -52,12 +63,15 @@ jQuery(function () {
   form$.on("submit", async function (event) {
     event.preventDefault();
     event.stopPropagation();
-    const data = {
-      fullname: fullname$.val(),
-      email: form$.find("#email").val(),
-      mobile: form$.find("#mobile").val(),
-      job: form$.find(`[name="job"]:checked`).val(),
-    };
+  const data = {
+  fullname: fullname$.val(),
+  email: form$.find("#email").val(),
+  mobile: form$.find("#mobile").val(),
+  job: form$.find(`[name="job"]:checked`).val(),
+  course: courseDatabase[selectedCourse]?.name || selectedCourse, // ✅ added course name
+};
+
+    
 
     if (!validateFullname() || !validateEmail() || !validateMobile()) {
       return;

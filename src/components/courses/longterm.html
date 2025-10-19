@@ -1,4 +1,4 @@
-<div class="courses--longterm bg-slate py-5">
+<div class="courses--longterm bg-slate py-5 " id="long-term">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -6,23 +6,84 @@
       </div>
     </div>
   </div>
+
   <div class="container">
     <div class="row">
-        <div class="col-12 col-md-6">
-            <div class="card">
-                <div class="card-body py-5">
-                    <h5 class="card-title text-center">Advanced ASIC Design &amp; Verification</h5>
-                    <p class="card-text text-center">SystemVerilog · UVM · SVA · Coverage</p>
-                </div>
-                <div class="card-footer">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <button class="btn" data-bs-toggle="modal" data-bs-target=".advanced-asic-design-verification">View Details</button>
-                    </div>
-                </div>
+      <!-- Course 1: Advanced ASIC Design & Verification -->
+      <div class="col-12 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body py-5">
+            <h5 class="card-title text-center">Advanced ASIC Design &amp; Verification</h5>
+            <p class="card-text text-center">SystemVerilog · UVM · SVA · Coverage</p>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-center align-items-center">
+              <button class="btn" data-bs-toggle="modal" data-bs-target=".advanced-asic-design-verification">
+                View Details
+              </button>
             </div>
+          </div>
         </div>
-    </div>
-  </div>
-</div>
+      </div>
+<!-- Course 3: physical Design -->
+      <div class="col-12 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body py-5">
+            <h5 class="card-title text-center">Physical Design</h5>
+            <p class="card-text text-center">PnR · STA · CTS · ECO</p>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-center align-items-center">
+              <button class="btn" data-bs-toggle="modal" data-bs-target=".physical-design">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Course 2: FPGA-Based System Design -->
+      <div class="col-12 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body py-5">
+            <h5 class="card-title text-center">FPGA-Based System Design</h5>
+            <p class="card-text text-center">AXI/DMA · RTL · On-board Debug</p>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-center align-items-center">
+              <button class="btn" data-bs-toggle="modal" data-bs-target=".fpga-based-system-design">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
+
+<!-- Course 4: Advanced embedded systems -->
+
+   
+     <div class="col-12 col-md-6 mb-4">
+        <div class="card">
+          <div class="card-body py-5">
+            <h5 class="card-title text-center">Advanced Embedded Systems</h5>
+            <p class="card-text text-center">Drivers · RTOS · Linux · IoT</p>
+          </div>
+          <div class="card-footer">
+            <div class="d-flex justify-content-center align-items-center">
+              <button class="btn" data-bs-toggle="modal" data-bs-target=".advanced-embedded-systems">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+ </div> <!-- end row -->
+  </div> <!-- end container -->
+</div> <!-- end courses section -->
+
+<!-- Modals -->
 <include src="./src/components/courses/modals/advanced-asic-design-verification.html"></include>
+<include src="./src/components/courses/modals/fpga-based-system-design.html"></include>
+<include src="./src/components/courses/modals/physical-design.html"></include>
+<include src="./src/components/courses/modals/advanced-embedded-systems.html"></include>
+

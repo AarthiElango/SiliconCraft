@@ -1,184 +1,290 @@
 [
-    {
-        "student": {
-            "name":"Kaviya VijayaKannan.C",
-            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-5.png"
-        },
-        "company":{
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/ahesa.png"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/6.png"
-        }
+  {
+    "student": {
+      "name": "Kaviya Vijayakannan C",
+      "image": "/images/students/kavya.png"
     },
-	
-	{
-        "student": {
-            "name":"Miruthala.E",
-            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-6.png"
-        },
-        "company":{
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/hcl-logo-white.jpg"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/5-1.png"
-        }
+    "company": {
+      "image": "/images/recruiters/aheesa.png"
     },
-	
-	{
-        "student": {
-            "name":"Macklin Eniya.c",
-            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-7.png"
-        },
-        "company":{
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/hcl-logo-white.jpg"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2025/02/poster2.png"
-        }
-    },
-	
-	{
-        "student": {
-            "name":"Kiran.k",
-            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-8.png"
-        },
-        "company":{
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/hcl-logo-white.jpg"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/8.png"
-        }
-    },
-	
-	
-	{
-        "student": {
-            "name":"Karthikeyan.k",
-            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-9.png"
-        },
-        "company":{
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/hcl-logo-white.jpg"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/9.png"
-        }
-    },
-	
-	{
-        "student": {
-            "name":"Surendhar.G",
-            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-10.png"
-        },
-        "company":{
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/hcl-logo-white.jpg"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/10.png"
-        }
-    },
-	
-	{
-        "student": {
-            "name":"Vignesh.D",
-            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-4-1.png"
-        },
-        "company":{
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/edit-png-1.png"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/6-1.png"
-        }
-    },
-	{
-        "student": {
-            "name":"Sutharsan.c",
-            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-1.jpg"
-        },
-        "company":{
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/test2.jpg"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/sili-7.jpeg"
-        }
-    },
-	
-	
-	
-	{
-        "student": {
-            "name":"Jagan.A",
-            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-2-1.png"
-        },
-        "company":{
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/object-automatation.jpg"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/4.png"
-        }
-    },
-	{
-        "student": {
-            "name":"Nithish Kannan.J",
-            "image":"https://silicon-craft.com/wp-content/uploads/2024/12/silicon-3-1.png"
-        },
-        "company":{
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/mobiveli1.jpg"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2024/12/2-3.png"
-        }
-    },
-      {
-        "student": {
-            "name":"Abinash.D",
-            "image":"https://silicon-craft.com/wp-content/uploads/2025/04/Abinash.png"
-        },
-        "company":{
-            "image": "https://silicon-craft.com/wp-content/uploads/2025/04/ymtsnew-logo.webp"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2025/04/6.png"
-        }
-    },
-	
-	{
-        "student": {
-            "name":"Manobala S",
-            "image":"https://silicon-craft.com/wp-content/uploads/2025/04/manobala.png"
-        },
-        "company":{
-            "image": "https://silicon-craft.com/wp-content/uploads/2025/04/edevon-logo.png"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2025/04/13.png"
-        }
-    },
-    
-    	{
-        "student": {
-            "name":"Mowneash R S",
-            "image":"https://silicon-craft.com/wp-content/uploads/2025/04/mowneash.png"
-        },
-        "company":{
-             "image": "https://silicon-craft.com/wp-content/uploads/2024/12/ahesa.png"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2025/04/16.pngg"
-        }
-    },
-    	{
-        "student": {
-            "name":"Mohamed Sharith",
-            "image":"https://silicon-craft.com/wp-content/uploads/2025/04/mohammed-sharith.png"
-        },
-        "company":{
-             "image": "https://silicon-craft.com/wp-content/uploads/2025/04/maxlinear-logo.png"
-        },
-        "popup": {
-            "image": "https://silicon-craft.com/wp-content/uploads/2025/04/19.png"
-        }
+    "popup": {
+      "image": "/images/placementupdates/kaviya.png"
     }
-	
-	
+  },
+  {
+    "student": {
+      "name": "Macklin Eniya C",
+      "image": "/images/students/mackp2.png"
+    },
+    "company": {
+      "image": "/images/recruiters/hcltech-new-logo.svg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/macklin.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Miruthula E",
+      "image": "/images/students/miruthulap3.png"
+    },
+    "company": {
+      "image": "/images/recruiters/hcltech-new-logo.svg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/mirthula.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Kiran K",
+      "image": "/images/students/kiran4.png"
+    },
+    "company": {
+      "image": "/images/recruiters/hcltech-new-logo.svg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/kamal.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Karthikeyan K",
+      "image": "/images/students/karthikeyan5.png"
+    },
+    "company": {
+      "image": "/images/recruiters/hcltech-new-logo.svg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/karthikeyan.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Sivasaravanan R",
+      "image": "/images/students/sivasaravanan6.png"
+    },
+    "company": {
+      "image": "/images/recruiters/insemi.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/sivasaravanan.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Surendhar G",
+      "image": "/images/students/surendar7.png"
+    },
+    "company": {
+      "image": "/images/recruiters/hcltech-new-logo.svg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/surendhar.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Vignesh D",
+      "image": "/images/students/vignesh8.png"
+    },
+    "company": {
+      "image": "/images/recruiters/hpcrobotics.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/vignesh.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Nithishkanna J L",
+      "image": "/images/students/nithishkanna10.png"
+    },
+    "company": {
+      "image": "/images/recruiters/mobiveil.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/nithiskanna.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Jagan A",
+      "image": "/images/students/jagan11.png"
+    },
+    "company": {
+      "image": "/images/recruiters/objectautomation.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/jagan.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Kali Mani S",
+      "image": "/images/students/kalimani11.png"
+    },
+    "company": {
+      "image": "/images/recruiters/insemi.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/kalimani.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Sutharsan C M",
+      "image": "/images/students/sutharsan13.png"
+    },
+    "company": {
+      "image": "/images/recruiters/alphawave-semi-logo.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/sutharsan.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Mowneash R S",
+      "image": "/images/students/mowneash14.png"
+    },
+    "company": {
+      "image": "/images/recruiters/aheesa.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/mouneash3.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Abinash D",
+      "image": "/images/students/abinash15.png"
+    },
+    "company": {
+      "image": "/images/recruiters/young_minds_technology_solutions_logo.jpg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/abinash.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Mohamed Sharith S",
+      "image": "/images/students/sharith16.png"
+    },
+    "company": {
+      "image": "/images/recruiters/maxlinear.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/sharith.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Manobala S",
+      "image": "/images/students/mano17.png"
+    },
+    "company": {
+      "image": "/images/recruiters/edveon.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/manobala.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Kesavan Natarajan",
+      "image": "/images/students/kesavan04.png"
+    },
+    "company": {
+      "image": "/images/recruiters/hcltech-new-logo.svg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/kesavan.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Lathika M",
+      "image": "/images/students/latheeka03.jpg"
+    },
+    "company": {
+      "image": "/images/recruiters/hcltech-new-logo.svg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/lathika.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Jayachitra R",
+      "image": "/images/students/jayachithra05.png"
+    },
+    "company": {
+      "image": "/images/recruiters/hcltech-new-logo.svg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/jayachithra.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Aslin Gijo",
+      "image": "/images/students/jijo02.jpg"
+    },
+    "company": {
+      "image": "/images/recruiters/hcltech-new-logo.svg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/gijo.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Sriniketh Sekar",
+      "image": "/images/students/sriniketh01.jpg"
+    },
+    "company": {
+      "image": "/images/recruiters/hcltech-new-logo.svg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/sriniketh.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Selvaragavan K",
+      "image": "/images/students/selva04.png"
+    },
+    "company": {
+      "image": "/images/recruiters/hcltech-new-logo.svg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/selvaragavan.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Ranjith R S G",
+      "image": "/images/students/ranjith01.png"
+    },
+    "company": {
+      "image": "/images/recruiters/appasamy_associates.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/ranjith.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Magnus Antony S",
+      "image": "/images/students/magnus02.png"
+    },
+    "company": {
+      "image": "/images/recruiters/appasamy_associates.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/magnus.png"
+    }
+  }
 ]

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Kaviya Vijayakannan C",
+    "studentImg": "~/src/images/students/kavya.png",
+    "companyLogo": "/src/images/recruiters/aheesa.png",
+    "companyName": "Aheesa",
+    "linkedin": "https://www.linkedin.com/in/kaviya-vijayakannan"
+  },
+  {
+    "name": "Macklin Eniya C",
+    "studentImg": "/src/images/students/mackp2.png",
+    "companyLogo": "/src/images/recruiters/hcltech-new-logo.svg",
+    "companyName": "HCL Tech",
+    "linkedin": "https://www.linkedin.com/in/macklin-eniya"
+  }
+]

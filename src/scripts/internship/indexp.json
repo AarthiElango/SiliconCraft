@@ -1,0 +1,22 @@
+[
+  {
+    "image": "/images/internship/int25B1.jpg",
+    "popup": { "image": "/images/internship/int25B1.jpg" }
+  },
+  {
+    "image": "/images/internship/int25B1-1.jpg",
+    "popup": { "image": "/images/internship/int25B1-1.jpg" }
+  },
+  {
+    "image": "/images/internship/int25B2-1.jpeg",
+    "popup": { "image": "/images/internship/int25B2-1.jpeg" }
+  },
+  {
+    "image": "/images/internship/int25B2-2.jpeg",
+    "popup": { "image": "/images/internship/int25B2-2.jpeg" }
+  },
+  {
+    "image": "/images/internship/int25B2-3.jpeg",
+    "popup": { "image": "/images/internship/int25B2-3.jpeg" }
+  }
+]

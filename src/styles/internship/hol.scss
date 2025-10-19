@@ -1,0 +1,41 @@
+.hands-on-splide .card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    min-width: 230px;
+    max-width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.hands-on-splide .splide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hands-on-splide .card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.hands-on-splide img.hands-on-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 425px) {
+  .modal-dialog {
+    margin: 0 auto; 
+  }
+  
+  .hands-on-splide .card {
+    min-width: 200px;
+  }
+  
+  .hands-on-splide img.hands-on-image {
+    height: 150px;
+  }
+}

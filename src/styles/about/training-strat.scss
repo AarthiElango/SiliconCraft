@@ -1,0 +1,8 @@
+.svg-36 svg {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease;
+}
+.d-flex:hover svg {
+  transform: scale(1.1);
+}
