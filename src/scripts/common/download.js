@@ -4,7 +4,8 @@ jQuery(function () {
  const courseDatabase = {
   "asic-dv": {
     name: "Advanced ASIC Design & Verification",
-    brochure: "src/brochure/asic-dv.pdf", // updated relative to index.html
+    brochure: "/brochure/asic-dv.pdf", 
+   // updated relative to index.html
   },
   pd: { 
     name: "Physical Design", 

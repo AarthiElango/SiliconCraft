@@ -1,5 +1,10 @@
+
 import * as bootstrap from 'bootstrap';
 
+// Make bootstrap available globally for the inline script
+window.bootstrap = bootstrap;
+
+// Rest of your existing code...
 const mouData = {
   partnerships: [
     {

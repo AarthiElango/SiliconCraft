@@ -17,7 +17,7 @@
       <ul class="nav nav-pills nav-fill mb-4" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="mous-tab" data-bs-toggle="tab" data-bs-target="#mous-tab-pane" type="button" role="tab" aria-controls="mous-tab-pane" aria-selected="true">
-            MOUs Signed
+            Industry to Academia Connect
           </button>
         </li>
         <li class="nav-item" role="presentation">
@@ -65,3 +65,54 @@
   </div>
 </div>
 <!-- <script type="module" src="./src/scripts/highlights/initHighlights.js"></script> -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Handle tab switching from URL hash
+    const hash = window.location.hash;
+    
+    if (hash) {
+      // Remove the # from hash
+      const tabPaneId = hash.substring(1);
+      
+      // Map tab pane IDs to button IDs
+      const tabMap = {
+        'mous-tab-pane': 'mous-tab',
+        'events-tab-pane': 'events-tab',
+        'awards-tab-pane': 'awards-tab'
+      };
+      
+      // Get the button ID
+      const buttonId = tabMap[tabPaneId];
+      
+      if (buttonId) {
+        // Find the tab button
+        const tabButton = document.getElementById(buttonId);
+        
+        if (tabButton) {
+          // Use Bootstrap's Tab API to show the tab
+          const tab = new bootstrap.Tab(tabButton);
+          tab.show();
+          
+          // Scroll to the tabs section smoothly
+          setTimeout(() => {
+            const tabsSection = document.querySelector('.nav-pills');
+            if (tabsSection) {
+              tabsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }, 100);
+        }
+      }
+    }
+  });
+  
+  // Optional: Update URL hash when tabs are clicked manually
+  document.querySelectorAll('button[data-bs-toggle="tab"]').forEach(button => {
+    button.addEventListener('shown.bs.tab', function(event) {
+      const targetId = event.target.getAttribute('data-bs-target');
+      if (targetId) {
+        // Update URL without triggering page reload
+        history.replaceState(null, null, targetId);
+      }
+    });
+  });
+</script>

@@ -1,0 +1,16 @@
+ .support{.bg-purple {
+      background-color: #6f42c1;
+    }
+    .text-purple {
+      color: #6f42c1;
+    }
+    .card h5, .card p {
+      word-break: keep-all;
+      overflow-wrap: normal;
+      hyphens: none;
+      white-space: normal;
+    }
+    .card {
+      min-height: 220px;
+    }
+}

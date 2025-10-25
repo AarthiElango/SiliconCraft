@@ -1,3 +1,7 @@
+.body{
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8eef5 100%);
+
+}
 .placement-splide .card{
     background: #1d1c42;
     color: white;
@@ -27,6 +31,8 @@
     width: 140px;
     height: 45px;
     object-fit: contain;
+    background: white; /* ✅ Added white background */
+    padding: 0.5rem 1.5rem; /* ✅ Added padding for extra width */
 }
 
 @media screen and (max-width: 425px) {

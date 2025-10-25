@@ -1,7 +1,10 @@
-<nav class="navbar navbar-expand-lg bg-white primary sticky-top" >
+
+
+<!-- Main Navigation -->
+<nav class="navbar navbar-expand-lg bg-white navbar-primary sticky-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand" href="~src/index.html">
-      <img src="~src/images/logo.png" alt="" />
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" alt="Logo" height="50" />
     </a>
     <button
       class="navbar-toggler"
@@ -17,37 +20,297 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="~src/index.html">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        
+        <!-- Courses Dropdown -->
+        <li class="nav-item dropdown mega-dropdown">
+          <a 
+            class="nav-link dropdown-toggle" 
+            href="courses.html" 
+            role="button" 
+            data-bs-toggle="dropdown" 
+            aria-expanded="false"
+            id="coursesDropdown"
+          >
             Courses
           </a>
-          <ul class="dropdown-menu">
-            <li><a class="nav-link" href="~src/courses.html">Short Term</a></li>
-            <li><a class="nav-link" href="~src/courses.html">Long Term</a></li>
-            <li><a class="nav-link" href="~src/internship.html">Internship</a></li>
+          <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+            <!-- Long Term Courses Nested Dropdown -->
+            <li class="dropdown dropend">
+              <a 
+                class="dropdown-item dropdown-toggle"
+                href="#"
+                role="button"
+              >
+                Long Term
+              </a>
+              <ul class="dropdown-menu dropdown-submenu">
+                <li>
+                  <a 
+                    class="dropdown-item course-link" 
+                    href="#"
+                    data-page="courses.html"
+                    data-section="long-term"
+                    data-modal=".advanced-asic-design-verification"
+                  >
+                    Advanced ASIC Design & Verification
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    class="dropdown-item course-link" 
+                    href="#"
+                    data-page="courses.html"
+                    data-section="long-term"
+                    data-modal=".physical-design"
+                  >
+                    Physical Design
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    class="dropdown-item course-link" 
+                    href="#"
+                    data-page="courses.html"
+                    data-section="long-term"
+                    data-modal=".fpga-based-system-design"
+                  >
+                    FPGA Based System Design
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    class="dropdown-item course-link" 
+                    href="#"
+                    data-page="courses.html"
+                    data-section="long-term"
+                    data-modal=".advanced-embedded-systems"
+                  >
+                    Advanced Embedded Systems
+                  </a>
+                </li>
+              </ul>
+            </li>
+            
+            <!-- Internship Nested Dropdown -->
+            <li class="dropdown dropend">
+              <a 
+                class="dropdown-item dropdown-toggle"
+                href="internship.html"
+                role="button"
+              >
+                Internship
+              </a>
+              <ul class="dropdown-menu dropdown-submenu">
+                <li>
+                  <a 
+                    class="dropdown-item course-link" 
+                    href="internship.html"
+                    data-page="courses.html"
+                    data-section="internship"
+                    data-modal=".vlsi-design-internship"
+                  >
+                    VLSI Design Internship
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    class="dropdown-item course-link" 
+                    href="~src/internship.html"
+                    data-page="courses.html"
+                    data-section="internship"
+                    data-modal=".embedded-systems-internship"
+                  >
+                    Embedded Systems Internship
+                  </a>
+                </li>
+              </ul>
+            </li>
+            
+            <!-- Short Term Direct Link -->
+            <li>
+              <a class="dropdown-item" href="courses.html#short-term">Short Term</a>
+            </li>
           </ul>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="~src/about.html">About</a>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="~src/placement.html">Placement</a>
+        <li class="nav-item">
+          <a class="nav-link" href="placement.html">Placement</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="~src/admissions.html">Admissions</a>
+        <li class="nav-item">
+          <a class="nav-link" href="admissions.html">Admissions</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="~src/highlights.html">Highlights</a>
+        
+        <!-- Highlights Dropdown -->
+        <li class="nav-item dropdown">
+          <a 
+            class="nav-link dropdown-toggle" 
+            href="highlights.html" 
+            role="button" 
+            data-bs-toggle="dropdown" 
+            aria-expanded="false"
+          >
+            Highlights
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="highlights.html#mous-tab-pane">ItoA Connect</a></li>
+            <li><a class="dropdown-item" href="highlights.html#events-tab-pane">External Events</a></li>
+            <li><a class="dropdown-item" href="highlights.html#awards-tab-pane">Internal Events</a></li>
+          </ul>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="~src/contact.html">contact</a>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
-          <li class="nav-item">
-          <a class="nav-link apply-now" href="~src/admissions.html#apply">Apply Now</a>
+        <li class="nav-item">
+          <a class="nav-link apply-now-btn" href="admissions.html#apply">Apply Now</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Handle course link clicks
+  document.querySelectorAll('.course-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      const page = this.getAttribute('data-page');
+      const section = this.getAttribute('data-section');
+      const modalClass = this.getAttribute('data-modal');
+      
+      // Store modal info in sessionStorage
+      sessionStorage.setItem('openModal', modalClass);
+      sessionStorage.setItem('targetSection', section);
+      
+      // Close mobile menu if open
+      const navbar = document.querySelector('.navbar-collapse');
+      const toggler = document.querySelector('.navbar-toggler');
+      if (navbar && navbar.classList.contains('show')) {
+        toggler.click();
+      }
+      
+      // Close any open dropdowns
+      document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+        menu.classList.remove('show');
+      });
+      
+      // Navigate to the page
+      window.location.href = `${page}#${section}`;
+    });
+  });
+  
+  // Check if we need to open a modal on page load
+  const modalToOpen = sessionStorage.getItem('openModal');
+  const targetSection = sessionStorage.getItem('targetSection');
+  
+  if (modalToOpen && targetSection) {
+    // Clear sessionStorage immediately to prevent re-triggering
+    sessionStorage.removeItem('openModal');
+    sessionStorage.removeItem('targetSection');
+    
+    // Wait for page to fully load
+    setTimeout(() => {
+      // Scroll to section first
+      const sectionElement = document.querySelector(`#${targetSection}`);
+      if (sectionElement) {
+        sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      
+      // Then open modal after scrolling completes
+      setTimeout(() => {
+        const modalElement = document.querySelector(modalToOpen);
+        if (modalElement && typeof bootstrap !== 'undefined') {
+          const modal = new bootstrap.Modal(modalElement);
+          modal.show();
+          
+          // Remove blur when modal is closed
+          modalElement.addEventListener('hidden.bs.modal', function() {
+            document.body.classList.remove('modal-open-custom');
+          }, { once: true });
+        }
+      }, 800);
+    }, 500);
+  }
+  
+  // Enhance all existing modals to add blur effect
+  document.querySelectorAll('.modal').forEach(modalElement => {
+    modalElement.addEventListener('show.bs.modal', function() {
+      // Small delay to ensure smooth transition
+      setTimeout(() => {
+        document.body.classList.add('modal-open-custom');
+      }, 100);
+    });
+    
+    modalElement.addEventListener('hidden.bs.modal', function() {
+      document.body.classList.remove('modal-open-custom');
+    });
+  });
+  
+  // Close mobile menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const navbar = document.querySelector('.navbar-collapse');
+    const toggler = document.querySelector('.navbar-toggler');
+    
+    if (navbar && navbar.classList.contains('show')) {
+      if (!navbar.contains(event.target) && !toggler.contains(event.target)) {
+        toggler.click();
+      }
+    }
+  });
+  
+  // Handle nested dropdowns on mobile
+  if (window.innerWidth < 992) {
+    const dropdownToggles = document.querySelectorAll('.dropdown-menu .dropdown-toggle');
+    
+    dropdownToggles.forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        const parentDropdown = this.closest('.dropdown, .dropend');
+        const menu = parentDropdown.querySelector('.dropdown-menu');
+        
+        if (menu) {
+          // Close other open nested menus
+          const openMenus = document.querySelectorAll('.dropdown-menu .dropdown-menu.show');
+          openMenus.forEach(function(openMenu) {
+            if (openMenu !== menu) {
+              openMenu.classList.remove('show');
+            }
+          });
+          
+          // Toggle current menu
+          menu.classList.toggle('show');
+        }
+      });
+    });
+  }
+  
+  // Add active class to current page nav link
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const navLinks = document.querySelectorAll('.navbar-nav > .nav-item > .nav-link');
+  
+  navLinks.forEach(function(link) {
+    const href = link.getAttribute('href');
+    if (href && (href === currentPage || href.includes(currentPage))) {
+      link.classList.add('active');
+    }
+  });
+  
+  // Desktop: Prevent parent dropdown toggle from navigating
+  if (window.innerWidth >= 992) {
+    document.querySelectorAll('.dropdown-menu .dropdown-toggle').forEach(toggle => {
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+      });
+    });
+  }
+});
+</script>

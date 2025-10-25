@@ -1,0 +1,140 @@
+.home--target-companies {
+    background-color: #f8f9fa; // Light background
+    
+    .companies-wrapper {
+        overflow: hidden;
+        width: 100%;
+
+        .companies-content {
+            display: flex;
+            gap: 2rem;
+            animation: scroll-left-to-right 40s linear infinite; // Left to right direction
+            
+            &:hover {
+                animation-play-state: paused; // Pause on hover
+            }
+            
+            .item {
+                flex-shrink: 0;
+            }
+            
+            .card {
+                width: 180px;
+                min-width: 180px;
+                background: white;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                }
+                
+                .card-body {
+                    padding: 1.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                @media (max-width: 768px) {
+                    width: 150px;
+                    min-width: 150px;
+                    
+                    .card-body {
+                        padding: 1rem;
+                    }
+                }
+                
+                @media (max-width: 576px) {
+                    width: 120px;
+                    min-width: 120px;
+                    
+                    .card-body {
+                        padding: 0.75rem;
+                    }
+                }
+            }
+            
+            img {
+                width: 100%;
+                height: 60px;
+                object-fit: contain;
+                
+                @media (max-width: 768px) {
+                    height: 50px;
+                }
+                
+                @media (max-width: 576px) {
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+// Animation for left-to-right scrolling
+@keyframes scroll-left-to-right {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+// Keep existing recruiters animation (right-to-left)
+.home--recruiters {
+    .recruiters-wrapper {
+        overflow: hidden;
+        width: 100%;
+
+        .recruiters-content {
+            display: flex;
+            gap: 1.5rem;
+            animation: scroll 20s linear infinite;
+            
+            &:hover {
+                animation-play-state: paused;
+            }
+            
+            .card {
+                width: 250px;
+                min-width: 250px;
+                
+                @media (max-width: 768px) {
+                    width: 200px;
+                    min-width: 200px;
+                }
+                
+                @media (max-width: 576px) {
+                    width: 150px;
+                    min-width: 150px;
+                }
+            }
+            
+            img {
+                width: 100%;
+                height: 60px;
+                object-fit: contain;
+                
+                @media (max-width: 768px) {
+                    height: 50px;
+                }
+                
+                @media (max-width: 576px) {
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
