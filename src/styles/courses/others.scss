@@ -1,0 +1,108 @@
+  .icon-box {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 28px;
+        }
+        
+        .icon-box-sm {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-size: 24px;
+        }
+        
+        .card {
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .card:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform: translateY(-5px);
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        
+        .gradient-icon {
+            background: linear-gradient(135deg, #0d6efd 0%, #4c3fb1 100%);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 32px;
+        }
+        
+        .badge-custom {
+            background: #0d6efd;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #0d6efd 0%, #4c3fb1 100%);
+            border-radius: 20px;
+            padding: 60px 30px;
+            color: white;
+        }
+        
+        .btn-custom {
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .highlight-card {
+            border-radius: 15px;
+            padding: 40px;
+        }
+        
+        .bg-gradient-blue {
+            background: linear-gradient(135deg, #e7f1ff 0%, #dce7ff 100%);
+        }
+        
+        .bg-gradient-green {
+            background: linear-gradient(135deg, #d1f4e0 0%, #bef0d4 100%);
+        }
+        
+        footer {
+            background: #212529;
+            color: #adb5bd;
+            padding: 40px 0;
+        }
+        
+        .check-icon {
+            color: #28a745;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 50px 0;
+            }
+            
+            .cta-section {
+                padding: 40px 20px;
+            }
+        }

@@ -1,6 +1,3 @@
-
-
-<!-- Main Navigation -->
 <nav class="navbar navbar-expand-lg bg-white navbar-primary sticky-top shadow-sm">
   <div class="container">
     <a class="navbar-brand" href="index.html">
@@ -27,11 +24,12 @@
         <li class="nav-item dropdown mega-dropdown">
           <a 
             class="nav-link dropdown-toggle" 
-            href="courses.html" 
+            href="#" 
             role="button" 
             data-bs-toggle="dropdown" 
             aria-expanded="false"
             id="coursesDropdown"
+            data-bs-auto-close="outside"
           >
             Courses
           </a>
@@ -40,7 +38,7 @@
             <li class="dropdown dropend">
               <a 
                 class="dropdown-item dropdown-toggle"
-                href="#"
+                href="courses.html#long-term"
                 role="button"
               >
                 Long Term
@@ -52,7 +50,7 @@
                     href="#"
                     data-page="courses.html"
                     data-section="long-term"
-                    data-modal=".advanced-asic-design-verification"
+                    data-modal="advanced-asic-design-verification"
                   >
                     Advanced ASIC Design & Verification
                   </a>
@@ -60,10 +58,10 @@
                 <li>
                   <a 
                     class="dropdown-item course-link" 
-                    href="#"
+                    href="javascript:void(0)"
                     data-page="courses.html"
                     data-section="long-term"
-                    data-modal=".physical-design"
+                    data-modal="physical-design"
                   >
                     Physical Design
                   </a>
@@ -71,10 +69,10 @@
                 <li>
                   <a 
                     class="dropdown-item course-link" 
-                    href="#"
+                    href="javascript:void(0)"
                     data-page="courses.html"
                     data-section="long-term"
-                    data-modal=".fpga-based-system-design"
+                    data-modal="fpga-based-system-design"
                   >
                     FPGA Based System Design
                   </a>
@@ -82,10 +80,10 @@
                 <li>
                   <a 
                     class="dropdown-item course-link" 
-                    href="#"
+                    href="javascript:void(0)"
                     data-page="courses.html"
                     data-section="long-term"
-                    data-modal=".advanced-embedded-systems"
+                    data-modal="advanced-embedded-systems"
                   >
                     Advanced Embedded Systems
                   </a>
@@ -105,22 +103,20 @@
               <ul class="dropdown-menu dropdown-submenu">
                 <li>
                   <a 
-                    class="dropdown-item course-link" 
-                    href="internship.html"
-                    data-page="courses.html"
-                    data-section="internship"
-                    data-modal=".vlsi-design-internship"
+                    class="dropdown-item internship-link" 
+                    href="#"
+                    data-page="internship.html"
+                    data-modal="vlsi-design-internship"
                   >
                     VLSI Design Internship
                   </a>
                 </li>
                 <li>
                   <a 
-                    class="dropdown-item course-link" 
-                    href="~src/internship.html"
-                    data-page="courses.html"
-                    data-section="internship"
-                    data-modal=".embedded-systems-internship"
+                    class="dropdown-item internship-link" 
+                    href="javascript:void(0)"
+                    data-page="internship.html"
+                    data-modal="embedded-systems-internship"
                   >
                     Embedded Systems Internship
                   </a>
@@ -129,9 +125,9 @@
             </li>
             
             <!-- Short Term Direct Link -->
-            <li>
+            <!-- <li>
               <a class="dropdown-item" href="courses.html#short-term">Short Term</a>
-            </li>
+            </li> -->
           </ul>
         </li>
         
@@ -153,13 +149,31 @@
             role="button" 
             data-bs-toggle="dropdown" 
             aria-expanded="false"
+            data-bs-auto-close="outside"
           >
             Highlights
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="highlights.html#mous-tab-pane">ItoA Connect</a></li>
-            <li><a class="dropdown-item" href="highlights.html#events-tab-pane">External Events</a></li>
-            <li><a class="dropdown-item" href="highlights.html#awards-tab-pane">Internal Events</a></li>
+            <li>
+              <a class="dropdown-item highlights-link" href="javascript:void(0)" data-tab="mous">
+                ItoA Connect
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item highlights-link" href="javascript:void(0)" data-tab="events">
+                External Events
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item highlights-link" href="javascript:void(0)" data-tab="awards">
+                Internal Events
+              </a>
+            </li>
+             <li>
+              <a class="dropdown-item" href=highlights.html#explore>
+              Explore More!
+              </a>
+            </li>
           </ul>
         </li>
         
@@ -175,7 +189,10 @@
 </nav>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Handle course link clicks
+  
+  // ======================
+  // COURSE LINKS HANDLER
+  // ======================
   document.querySelectorAll('.course-link').forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault();
@@ -183,134 +200,248 @@ document.addEventListener('DOMContentLoaded', function() {
       
       const page = this.getAttribute('data-page');
       const section = this.getAttribute('data-section');
-      const modalClass = this.getAttribute('data-modal');
+      const modalId = this.getAttribute('data-modal');
       
-      // Store modal info in sessionStorage
-      sessionStorage.setItem('openModal', modalClass);
+      sessionStorage.setItem('navigationType', 'course');
+      sessionStorage.setItem('targetPage', page);
       sessionStorage.setItem('targetSection', section);
+      sessionStorage.setItem('targetModal', modalId);
       
-      // Close mobile menu if open
-      const navbar = document.querySelector('.navbar-collapse');
-      const toggler = document.querySelector('.navbar-toggler');
-      if (navbar && navbar.classList.contains('show')) {
-        toggler.click();
-      }
-      
-      // Close any open dropdowns
-      document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
-        menu.classList.remove('show');
-      });
-      
-      // Navigate to the page
-      window.location.href = `${page}#${section}`;
+      closeAllDropdowns();
+      window.location.href = page;
     });
   });
   
-  // Check if we need to open a modal on page load
-  const modalToOpen = sessionStorage.getItem('openModal');
-  const targetSection = sessionStorage.getItem('targetSection');
-  
-  if (modalToOpen && targetSection) {
-    // Clear sessionStorage immediately to prevent re-triggering
-    sessionStorage.removeItem('openModal');
-    sessionStorage.removeItem('targetSection');
-    
-    // Wait for page to fully load
-    setTimeout(() => {
-      // Scroll to section first
-      const sectionElement = document.querySelector(`#${targetSection}`);
-      if (sectionElement) {
-        sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+  // ======================
+  // INTERNSHIP LINKS HANDLER
+  // ======================
+  document.querySelectorAll('.internship-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
       
-      // Then open modal after scrolling completes
-      setTimeout(() => {
-        const modalElement = document.querySelector(modalToOpen);
-        if (modalElement && typeof bootstrap !== 'undefined') {
-          const modal = new bootstrap.Modal(modalElement);
-          modal.show();
+      const page = this.getAttribute('data-page');
+      const modalId = this.getAttribute('data-modal');
+      
+      sessionStorage.setItem('navigationType', 'internship');
+      sessionStorage.setItem('targetPage', page);
+      sessionStorage.setItem('targetModal', modalId);
+      
+      closeAllDropdowns();
+      window.location.href = page;
+    });
+  });
+  
+  // ======================
+  // HIGHLIGHTS LINKS HANDLER
+  // ======================
+  document.querySelectorAll('.highlights-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      const tabName = this.getAttribute('data-tab');
+      
+      sessionStorage.setItem('navigationType', 'highlights');
+      sessionStorage.setItem('targetTab', tabName);
+      
+      closeAllDropdowns();
+      window.location.href = 'highlights.html';
+    });
+  });
+  
+  // ======================
+  // PAGE LOAD HANDLER - COURSES
+  // ======================
+  if (window.location.pathname.includes('courses.html')) {
+    const navType = sessionStorage.getItem('navigationType');
+    
+    if (navType === 'course') {
+      const section = sessionStorage.getItem('targetSection');
+      const modalId = sessionStorage.getItem('targetModal');
+      
+      sessionStorage.removeItem('navigationType');
+      sessionStorage.removeItem('targetPage');
+      sessionStorage.removeItem('targetSection');
+      sessionStorage.removeItem('targetModal');
+      
+      if (section && modalId) {
+        setTimeout(() => {
+          const sectionElement = document.getElementById(section);
+          if (sectionElement) {
+            sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
           
-          // Remove blur when modal is closed
-          modalElement.addEventListener('hidden.bs.modal', function() {
-            document.body.classList.remove('modal-open-custom');
-          }, { once: true });
-        }
-      }, 800);
-    }, 500);
-  }
-  
-  // Enhance all existing modals to add blur effect
-  document.querySelectorAll('.modal').forEach(modalElement => {
-    modalElement.addEventListener('show.bs.modal', function() {
-      // Small delay to ensure smooth transition
-      setTimeout(() => {
-        document.body.classList.add('modal-open-custom');
-      }, 100);
-    });
-    
-    modalElement.addEventListener('hidden.bs.modal', function() {
-      document.body.classList.remove('modal-open-custom');
-    });
-  });
-  
-  // Close mobile menu when clicking outside
-  document.addEventListener('click', function(event) {
-    const navbar = document.querySelector('.navbar-collapse');
-    const toggler = document.querySelector('.navbar-toggler');
-    
-    if (navbar && navbar.classList.contains('show')) {
-      if (!navbar.contains(event.target) && !toggler.contains(event.target)) {
-        toggler.click();
+          setTimeout(() => {
+            const modalElement = document.querySelector(`.${modalId}`);
+            if (modalElement && typeof bootstrap !== 'undefined') {
+              const modal = new bootstrap.Modal(modalElement);
+              modal.show();
+            }
+          }, 800);
+        }, 300);
       }
     }
-  });
+  }
   
-  // Handle nested dropdowns on mobile
-  if (window.innerWidth < 992) {
-    const dropdownToggles = document.querySelectorAll('.dropdown-menu .dropdown-toggle');
+  // ======================
+  // PAGE LOAD HANDLER - INTERNSHIP
+  // ======================
+  if (window.location.pathname.includes('internship.html')) {
+    const navType = sessionStorage.getItem('navigationType');
     
-    dropdownToggles.forEach(function(toggle) {
+    if (navType === 'internship') {
+      const modalId = sessionStorage.getItem('targetModal');
+      
+      sessionStorage.removeItem('navigationType');
+      sessionStorage.removeItem('targetPage');
+      sessionStorage.removeItem('targetModal');
+      
+      if (modalId) {
+        setTimeout(() => {
+          const modalElement = document.querySelector(`.${modalId}`);
+          if (modalElement && typeof bootstrap !== 'undefined') {
+            const modal = new bootstrap.Modal(modalElement);
+            modal.show();
+          }
+        }, 500);
+      }
+    }
+  }
+  
+  // ======================
+  // PAGE LOAD HANDLER - HIGHLIGHTS
+  // ======================
+  if (window.location.pathname.includes('highlights.html')) {
+    const navType = sessionStorage.getItem('navigationType');
+    
+    if (navType === 'highlights') {
+      const tabName = sessionStorage.getItem('targetTab');
+      
+      sessionStorage.removeItem('navigationType');
+      sessionStorage.removeItem('targetTab');
+      
+      if (tabName) {
+        setTimeout(() => {
+          const tabButton = document.querySelector(`button[data-bs-target="#${tabName}-tab-pane"]`);
+          if (tabButton && typeof bootstrap !== 'undefined') {
+            const tab = new bootstrap.Tab(tabButton);
+            tab.show();
+          }
+        }, 300);
+      }
+    }
+  }
+  
+  // ======================
+  // DESKTOP HOVER BEHAVIOR (992px and above)
+  // ======================
+  if (window.innerWidth >= 992) {
+    document.querySelectorAll('.dropdown-menu .dropdown, .dropdown-menu .dropend').forEach(function(dropdownEl) {
+      dropdownEl.addEventListener('mouseenter', function() {
+        const submenu = this.querySelector('.dropdown-menu');
+        if (submenu) {
+          submenu.classList.add('show');
+        }
+      });
+      
+      dropdownEl.addEventListener('mouseleave', function() {
+        const submenu = this.querySelector('.dropdown-menu');
+        if (submenu) {
+          submenu.classList.remove('show');
+        }
+      });
+    });
+  }
+  
+  // ======================
+  // MOBILE/TABLET CLICK BEHAVIOR (Below 992px)
+  // ======================
+  if (window.innerWidth < 992) {
+    
+    // Disable Bootstrap's auto-toggle for nested dropdowns
+    document.querySelectorAll('.dropdown-menu .dropdown-toggle').forEach(function(toggle) {
+      // Remove data-bs-toggle temporarily to prevent Bootstrap interference
+      toggle.removeAttribute('data-bs-toggle');
+      
       toggle.addEventListener('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
         
         const parentDropdown = this.closest('.dropdown, .dropend');
-        const menu = parentDropdown.querySelector('.dropdown-menu');
+        const menu = parentDropdown.querySelector(':scope > .dropdown-menu');
         
         if (menu) {
-          // Close other open nested menus
-          const openMenus = document.querySelectorAll('.dropdown-menu .dropdown-menu.show');
-          openMenus.forEach(function(openMenu) {
-            if (openMenu !== menu) {
-              openMenu.classList.remove('show');
+          const isShown = menu.classList.contains('show');
+          
+          // Close all sibling nested dropdowns
+          const siblings = parentDropdown.parentElement.querySelectorAll(':scope > .dropdown > .dropdown-menu.show, :scope > .dropend > .dropdown-menu.show');
+          siblings.forEach(function(sibling) {
+            if (sibling !== menu) {
+              sibling.classList.remove('show');
             }
           });
           
-          // Toggle current menu
+          // Toggle the clicked dropdown
           menu.classList.toggle('show');
+        }
+      });
+    });
+    
+    // Prevent clicking inside dropdown from closing it
+    document.querySelectorAll('.dropdown-menu').forEach(function(menu) {
+      menu.addEventListener('click', function(e) {
+        // Only stop propagation if not clicking final destination links
+        if (!e.target.classList.contains('course-link') && 
+            !e.target.classList.contains('internship-link') && 
+            !e.target.classList.contains('highlights-link') &&
+            !e.target.href || e.target.href.includes('#') || e.target.href.includes('javascript:void(0)')) {
+          e.stopPropagation();
         }
       });
     });
   }
   
-  // Add active class to current page nav link
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  const navLinks = document.querySelectorAll('.navbar-nav > .nav-item > .nav-link');
+  // ======================
+  // UTILITY FUNCTIONS
+  // ======================
+  function closeAllDropdowns() {
+    document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+      menu.classList.remove('show');
+    });
+    
+    const navbar = document.querySelector('.navbar-collapse');
+    if (navbar && navbar.classList.contains('show')) {
+      const bsCollapse = bootstrap.Collapse.getInstance(navbar);
+      if (bsCollapse) {
+        bsCollapse.hide();
+      } else {
+        const toggler = document.querySelector('.navbar-toggler');
+        if (toggler) toggler.click();
+      }
+    }
+  }
   
-  navLinks.forEach(function(link) {
+  // ======================
+  // ACTIVE PAGE INDICATOR
+  // ======================
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.navbar-nav > .nav-item > .nav-link').forEach(function(link) {
     const href = link.getAttribute('href');
-    if (href && (href === currentPage || href.includes(currentPage))) {
+    if (href && href.includes(currentPage.split('#')[0])) {
       link.classList.add('active');
     }
   });
   
-  // Desktop: Prevent parent dropdown toggle from navigating
-  if (window.innerWidth >= 992) {
-    document.querySelectorAll('.dropdown-menu .dropdown-toggle').forEach(toggle => {
-      toggle.addEventListener('click', function(e) {
-        e.preventDefault();
-      });
-    });
-  }
+  // ======================
+  // WINDOW RESIZE HANDLER
+  // ======================
+  let resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      closeAllDropdowns();
+    }, 250);
+  });
 });
 </script>

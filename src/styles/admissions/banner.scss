@@ -1,0 +1,100 @@
+.admission--banner{
+   
+        word-break: keep-all;
+      overflow-wrap: normal;
+      hyphens: none;
+      white-space: normal;
+   
+}
+
+    .hover-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .bg-gradient-success {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .step-card {
+            position: relative;
+            padding-left: 80px;
+        }
+
+        .step-card::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 60px;
+            bottom: -40px;
+            width: 2px;
+            background: linear-gradient(to bottom, #667eea, transparent);
+        }
+
+        .step-card:last-child::before {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .step-card {
+                padding-left: 0;
+                padding-top: 20px;
+            }
+            
+            .step-card::before {
+                display: none;
+            }
+
+            .display-3 {
+                font-size: 2.5rem;
+            }
+            
+            .display-4 {
+                font-size: 2rem;
+            }
+            
+            .display-5 {
+                font-size: 1.75rem;
+            }
+        }
+
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        .bg{
+    background: linear-gradient(-45deg, var(--navy), var(--maroon), var(--navy));
+
+        }

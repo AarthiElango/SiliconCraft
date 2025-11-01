@@ -9,4 +9,15 @@
     display: flex;
     position: relative;
     overflow: hidden;
+    min-height: 250px;
 }
+
+ .hero-bg {
+         opacity: .2;
+         background-image: url(~/src/images/about/home-hero.jpeg);
+         background-position: 50%;
+         background-size: cover;
+         position: absolute;
+         inset: 0;
+
+     }

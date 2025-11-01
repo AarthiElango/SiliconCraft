@@ -242,7 +242,7 @@
   {
     "student": {
       "name": "Sriniketh Sekar",
-      "image": "/images/students/sriniketh01.jpg"
+      "image": "/images/students/sriniketh01.png"
     },
     "company": {
       "image": "/images/recruiters/hcltech-new-logo.svg"
@@ -285,6 +285,77 @@
     },
     "popup": {
       "image": "/images/placementupdates/magnus.png"
+    }
+  },
+  
+  {
+    "student": {
+      "name": "Praveen K",
+      "image": "/images/students/praveen_k.jpg",
+      "linkedin": "https://www.linkedin.com/in/praveen-kkpd/"
+    },
+    "company": {
+      "name": "Tensemi",
+      "image": "/images/recruiters/tensemi.jpg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/praveen_k.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Kabilan R S",
+      "image": "/images/students/kabilan.jpg",
+      "linkedin": "https://www.linkedin.com/in/kabilan-r-s-619b18320/"
+    },
+    "company": {
+      "name": "Bosch",
+      "image": "/images/recruiters/bosch.jpg"
+    },
+    "popup": {
+      "image": "/images/placementupdates/kabilan.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Mohanram K",
+      "image": "/images/students/mohanramnew.png",
+      "linkedin": "https://www.linkedin.com/in/mohanram-k-76ab1027a/"
+    },
+    "company": {
+      "name": "Cornet",
+      "image": "/images/recruiters/cornet.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/mohanram.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Manikandan B",
+      "image": "/images/students/manikandan_emb.png",
+      "linkedin": "https://www.linkedin.com/in/manikandanb25/"
+    },
+    "company": {
+      "name": "Eoxys",
+      "image": "/images/recruiters/eoxys.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/manikandan_emb.png"
+    }
+  },
+  {
+    "student": {
+      "name": "Kamal M",
+      "image": "/images/students/kamal_emb.jpg",
+      "linkedin": "https://www.linkedin.com/in/kamal-m-0b201a270/"
+    },
+    "company": {
+      "name": "Eoxys",
+      "image": "/images/recruiters/eoxys.png"
+    },
+    "popup": {
+      "image": "/images/placementupdates/kamal_emb.png"
     }
   }
 ]
